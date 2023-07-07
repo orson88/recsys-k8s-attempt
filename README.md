@@ -35,6 +35,14 @@
 
 ### Results of research and practise: What is better to do and what i will learn next
 1. DevOps
-2. 1. Strives for the IaC architecture, add the K8S operator, which would request a cluster from the git during initialization.
+   1. Strives for the IaC architecture, add the K8S operator, which would request a cluster from the git during initialization.
    2. Add CI / CD and testing: on a new commit, build the back and front, check the performance.
    3. Add smart replication rules for data nodes and rules to limit and stop other pods when retraining starts.
+2. MLOps
+   1. Add the AirFlow orchestrator to easily and conveniently run additional training with DAGs.
+   2. Change wandb to minio (local S3 replacement) and mlflow (for logging models and metrics)
+   3. Change the approach to choosing a new model. At the moment, such things as data drift, concept drift, etc. are not taken into account.
+   4. Add automatic serving
+3. Data Engineering and Load
+   1. Use AirFlow to set up ETL/ELT scripts to manage data expansion (for example, when new users appear).
+   2. Insert a queue layer. To distribute the load on the service and the database, deploy Kafka.
