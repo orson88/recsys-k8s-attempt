@@ -5,7 +5,8 @@
 1. Learn basics of K8s
 2. Create a full ml-based service and take a glimpse at why exactly are ML Operations are needed and try to create some)
 
-### Overwiev of the service
+## Overwiev of the service
+### Stack
 | Element | Implementation | How it could be improved |
 | ------- | -------------- | --------------- |
 | Infrastructure | minikube | Add an ingress contoller so the networking would be more secure and centalized |
@@ -16,7 +17,9 @@
 | Monitoring | Grafana + Prometheus | No alerting, only dashboards. Dashboard itself is not perfect. Gotta take some time to learn about Grafana's syntax |
 | Versioning | Github | Idk what to write here, but a total IaC would be better)))) |
 | Virtualization | K8s + docker | Initializing a local docker registry would be good, also pulling the cluster state from github would also be a better practice (for IaC) |
+| MLOps | Manual python script + W&B | Should add a proper orchestrated procedure for new models and add serving, so that for inference the fastapi backend would pull models from W&B rather than using the local model object file after manual script run. |
 
-
-
+#### Architecture overview
 <img src="https://github.com/orson88/recsys-k8s-attempt/assets/62896830/64a9c291-0655-4321-8a51-8f3ea6326f97)https://github.com/orson88/recsys-k8s-attempt/assets/62896830/64a9c291-0655-4321-8a51-8f3ea6326f97" width="800" height="675">
+
+### What the service does
