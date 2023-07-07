@@ -31,3 +31,10 @@
 
 3) Register or add new reactions
 ![image](https://github.com/orson88/recsys-k8s-attempt/assets/62896830/fa6c5231-aa39-4baa-8d59-68d936a0b72f)
+
+
+### Results of research and practise: What is better to do and what i will learn next
+1. DevOps
+2. 1. Strives for the IaC architecture, add the K8S operator, which would request a cluster from the git during initialization.
+   2. Add CI / CD and testing: on a new commit, build the back and front, check the performance.
+   3. Add smart replication rules for data nodes and rules to limit and stop other pods when retraining starts.
