@@ -23,3 +23,11 @@
 <img src="https://github.com/orson88/recsys-k8s-attempt/assets/62896830/64a9c291-0655-4321-8a51-8f3ea6326f97)https://github.com/orson88/recsys-k8s-attempt/assets/62896830/64a9c291-0655-4321-8a51-8f3ea6326f97" width="800" height="675">
 
 ### What the service does
+1) Find yourself in the users list
+![image](https://github.com/orson88/recsys-k8s-attempt/assets/62896830/cf3cf82c-4440-4712-a1f7-26fdbe5291dd)
+
+2) Get 5 songs recomended
+![image](https://github.com/orson88/recsys-k8s-attempt/assets/62896830/afa5332f-81a5-4133-ad02-162fe0b15e4e)
+
+3) Register or add new reactions
+![image](https://github.com/orson88/recsys-k8s-attempt/assets/62896830/fa6c5231-aa39-4baa-8d59-68d936a0b72f)
