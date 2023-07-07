@@ -1,9 +1,21 @@
 # recsys-k8s-attempt
 ## A repo for my first attempt at learning k8s and mlops practises via a recsys task
 
+
 ### The two aims of this project
 1. Learn basics of K8s
 2. Create a full ml-based service and take a glimpse at why exactly are ML Operations are needed and try to create some)
+
+## Replication
+### Requirements
+1. Kubernetes, minikube
+2. Linux
+3. Docker
+4. Helm
+   
+Clone the repo
+Start cluster-init.sh
+go into postgre pod and create train and test tables from .csv files loaded into them
 
 ## Overview of the service
 ### Stack
