@@ -1,0 +1,45 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mlflow-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: mlflow-deployment
+  template:
+    metadata:
+      labels:
+        app: mlflow-deployment
+    spec:
+      containers:
+      - name: mlflow-deployment
+        image: dkhundley/mlflow-server:1.0.3
+        imagePullPolicy: Always
+        args:
+        - --host=0.0.0.0
+        - --port=5000
+        - --backend-store-uri=/storage/mlflow/runs/
+        - --default-artifact-root=/storage/mlflow/artifactory/
+        - --workers=2
+        ports:
+        - name: http
+          containerPort: 5000
+          protocol: TCP
+        resources:
+          requests:
+            cpu: "500m"
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: mlflow-service
+spec:
+  type: NodePort
+  ports:
+    - port: 5000
+      targetPort: 5000
+      protocol: TCP
+      name: http
+  selector:
+    app: mlflow-deployment
