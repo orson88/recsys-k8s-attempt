@@ -5,7 +5,7 @@
 1. Learn basics of K8s
 2. Create a full ml-based service and take a glimpse at why exactly are ML Operations are needed and try to create some)
 
-## Overwiev of the service
+## Overview of the service
 ### Stack
 | Element | Implementation | How it could be improved |
 | ------- | -------------- | --------------- |
