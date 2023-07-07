@@ -15,6 +15,7 @@
    
 Clone the repo
 Start cluster-init.sh
+
 go into postgre pod and create train and test tables from .csv files loaded into them
 
 ## Overview of the service
